@@ -19,3 +19,14 @@
 * 4일째, 새로운 문제가 나오고 6일째까지 위 과정을 반복합니다.
 * 6일이 흐른 뒤, 7일째에 일주일동안 푼 2문제에 대해서 접근법,풀이,시간복잡도를 발표하는 시간을 가집니다.
 * 위 과정을 계속 반복합니다.
+
+
+
+## PS 공부방식에 도움이 되는 글
+
+- [baekjoon님, 나는 어떻게 알고리즘을 공부했을까?](https://www.slideshare.net/Baekjoon/ss-52193873)
+- [plzrun님, PS 공부를 하면서 좌절감을 느꼈던 글](http://plzrun.tistory.com/entry/PS%EA%B3%B5%EB%B6%80%EB%A5%BC-%ED%95%98%EB%A9%B4%EC%84%9C-%EC%A2%8C%EC%A0%88%EA%B0%90%EC%9D%84-%EB%8A%90%EB%82%80-%EB%B6%84%EB%93%A4%EC%9D%B4-%EC%9D%BD%EC%96%B4%EB%B4%A4%EC%9C%BC%EB%A9%B4-%ED%95%98%EB%8A%94-%EB%82%98%EC%9D%98-2016%EB%85%84)
+- [plzrun님, PS 시작하기](http://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
+- [dreamoon님, 어떻게 알고리즘 대회 실력을 키울 수 있을까(번역)](https://www.acmicpc.net/blog/view/48)
+- [baactree님, 알고리즘 공부 방법/순서](http://baactree.tistory.com/14)
+- [koosaga님, 내가 문제풀이를 연습하는 방법](http://koosaga.com/217)
