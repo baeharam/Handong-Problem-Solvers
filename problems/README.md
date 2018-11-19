@@ -5,3 +5,13 @@
 * 어느 문제인지 폴더를 확인한 후 커밋
 * 문제와 더불어 Write-up 텍스트/마크다운 파일을 같이 `자기이름.확장자`로 커밋
 * 다 풀었으면 자신의 이름 부분에 :white_check_mark: 하기!! → 어떻게? `:white_check_mark:`
+
+
+
+# 문제 채점 상태 보기
+
+* [길은실](https://www.acmicpc.net/status?user_id=EunsilGil)   [유예찬](https://www.acmicpc.net/status?user_id=fbdp1202)   [김시온](https://www.acmicpc.net/status?user_id=slon11)
+* [김용주](https://www.acmicpc.net/status?user_id=jhvl4130)   [배하람](https://www.acmicpc.net/status?user_id=gkfkagkfka12)   [김혜원](https://www.acmicpc.net/status?user_id=db3p)
+* [박하윤](https://www.acmicpc.net/status?user_id=gkahsdl)   [백승빈](https://www.acmicpc.net/status?user_id=noely1008)   [임준엽](https://www.acmicpc.net/status?user_id=okinawaman)
+* [전병운](https://www.acmicpc.net/status?user_id=quddnsrnt)   [전상규](https://www.acmicpc.net/status?user_id=wjstkdrb91)   [전혜원](https://www.acmicpc.net/status?user_id=hyeon62)
+* [지승윤](https://www.acmicpc.net/status?user_id=csy1874)
