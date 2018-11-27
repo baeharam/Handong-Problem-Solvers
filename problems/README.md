@@ -17,3 +17,7 @@
 * [지승윤](https://www.acmicpc.net/status?user_id=csy1874) [강동인](https://www.acmicpc.net/status?user_id=dongin)   [박수현](https://www.acmicpc.net/status?user_id=suhyun926)
 
  
+
+# :x:경고 대상:x:
+
+**길은실,​ 김시온,​ 임준엽**
