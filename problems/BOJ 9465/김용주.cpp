@@ -8,12 +8,12 @@ int T, N;
 int stick[2][MAX_N], dp[MAX_N][3];
 
 int sticker(int x, int state) {
-	if (x == N) return 0;	//³¡¿¡ µµ´Ş
-	if (dp[x][state] != -1) return dp[x][state];	//°ªÀÌ ÀÖÀ¸¸é return
+	if (x == N) return 0;	//ëì— ë„ë‹¬
+	if (dp[x][state] != -1) return dp[x][state];	//ê°’ì´ ìˆìœ¼ë©´ return
 
 	int result = sticker(x + 1, 0);
-	if (state != 1) result = max(result, sticker(x + 1, 1) + stick[0][x]);	//¿ŞÂÊ À§ÀÇ sticker°¡ ¾È¶¼Á® ÀÖÀ¸¸é µÑ´Ù ¾È¶¼ ºÀ»¶§ÀÇ °ª°ú ¿ŞÂÊ À§¸¦ ¶ÂÀ»¶§ÀÇ °ª Áß Å« °ªÀ¸·Î ¼³Á¤
-	if (state != 2) result = max(result, sticker(x + 1, 2) + stick[1][x]);	//¿ŞÂÊ ¾Æ·¡ÀÇ sticker°¡ ¾È¶¼¾îÁ® ÀÖÀ¸¸é...
+	if (state != 1) result = max(result, sticker(x + 1, 1) + stick[0][x]);	//ì™¼ìª½ ìœ„ì˜ stickerê°€ ì•ˆë–¼ì ¸ ìˆìœ¼ë©´ ë‘˜ë‹¤ ì•ˆë–¼ì–´ì ¸ ìˆì„ë•Œì˜ ê°’ê³¼ ì™¼ìª½ ìœ„ë¥¼ ë—ì„ë•Œì˜ ê°’ ì¤‘ í° ê°’ìœ¼ë¡œ ì„¤ì •
+	if (state != 2) result = max(result, sticker(x + 1, 2) + stick[1][x]);	//ì™¼ìª½ ì•„ë˜ì˜ stickerê°€ ì•ˆë–¼ì–´ì ¸ ìˆìœ¼ë©´...
 
 	dp[x][state] = result;
 
