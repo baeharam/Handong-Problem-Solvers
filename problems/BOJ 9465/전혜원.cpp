@@ -46,18 +46,18 @@ int main(int argc, char** argv) {
             price[1][i] = big(price[0][i-1], price[0][i-2]) + grid[1][i] ;
         }
         answer[iter] =  big(price[0][input_-1], price[1][input_-1]) ;
+
+        for (int i=0 ; i<2 ; i++) {
+            delete grid[i] ;
+            delete price[i] ;
+        }
+
+        delete grid ;
+        delete price ;
     } 
 
     for (int i=0 ; i<test ; i++) {
         cout << answer[i] << endl ;
     }
-
-    for (int i=0 ; i<2 ; i++) {
-        delete grid[i] ;
-        delete price[i] ;
-    }
-
-    delete grid ;
-    delete price ;
 }
 
