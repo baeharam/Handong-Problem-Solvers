@@ -12,8 +12,10 @@ int sticker(int x, int state) {
 	if (dp[x][state] != -1) return dp[x][state];	//값이 있으면 return
 
 	int result = sticker(x + 1, 0);
-	if (state != 1) result = max(result, sticker(x + 1, 1) + stick[0][x]);	//왼쪽 위의 sticker가 안떼져 있으면 둘다 안떼어져 있을때의 값과 왼쪽 위를 뗏을때의 값 중 큰 값으로 설정
-	if (state != 2) result = max(result, sticker(x + 1, 2) + stick[1][x]);	//왼쪽 아래의 sticker가 안떼어져 있으면...
+	//왼쪽 위의 sticker가 안떼져 있으면 둘다 안떼어져 있을때의 값과 왼쪽 위를 뗏을때의 값 중 큰 값으로 설정
+	if (state != 1) result = max(result, sticker(x + 1, 1) + stick[0][x]);	
+	//왼쪽 아래의 sticker가 안떼어져 있으면...
+	if (state != 2) result = max(result, sticker(x + 1, 2) + stick[1][x]);	
 
 	dp[x][state] = result;
 
