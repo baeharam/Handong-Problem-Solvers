@@ -15,9 +15,10 @@
 * [박하윤](https://www.acmicpc.net/status?user_id=gkahsdl)   [백승빈](https://www.acmicpc.net/status?user_id=noely1008)   [임준엽](https://www.acmicpc.net/status?user_id=okinawaman)
 * [전병운](https://www.acmicpc.net/status?user_id=quddnsrnt)   [전상규](https://www.acmicpc.net/status?user_id=wjstkdrb91)   [전혜원](https://www.acmicpc.net/status?user_id=hyeon62)
 * [지승윤](https://www.acmicpc.net/status?user_id=csy1874)   [강동인](https://www.acmicpc.net/status?user_id=dongin)   [박수현](https://www.acmicpc.net/status?user_id=suhyun926)
+* [임수진](https://www.acmicpc.net/status?user_id=imsujin0)
 
  
 
 # :x:경고 대상:x:
 
-**전병운,​ 김시온,​ 임수진**
+**전병운,​ 김시온**
