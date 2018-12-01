@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
     
     int min = 1;
     int max = house.back() - house.front();
-    cout << right;
+   
     
     int answer = -1;
     
