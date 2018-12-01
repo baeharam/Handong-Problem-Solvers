@@ -10,6 +10,6 @@
 
 |              | 김시온 | 양예진 | 백승빈 |
 | ------------ | :----: | :----: | :----: |
-| **코드**     ||:white_check_mark:|:white_check_mark:|
-| **Write-up** ||:white_check_mark:|:white_check_mark:|
+| **코드**     |:white_check_mark:|:white_check_mark:|:white_check_mark:|
+| **Write-up** |:white_check_mark:|:white_check_mark:|:white_check_mark:|
 
