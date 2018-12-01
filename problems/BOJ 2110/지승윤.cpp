@@ -20,7 +20,7 @@ int main()
     cin>>n>>k;
     for(i=0;i<n;i++)
         cin>>a[i];
-    std::sort(a,a+n);
+    sort(a,a+n);
     while(s<=e){
         m=(s+e)/2;
         if(f(m)){
