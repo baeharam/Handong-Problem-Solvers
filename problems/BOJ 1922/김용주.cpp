@@ -4,7 +4,6 @@
 #include <algorithm>
 using namespace std;
 
-#if 0
 typedef struct {
 	int a, b, weight;
 }Tree;
@@ -16,11 +15,11 @@ int N, M, result;
 
 
 int find(int n) {
-	// ·çÆ®¸é ÀÚ±âÀÚ½ÅÀ» return
+	// ë£¨íŠ¸ë©´ ìê¸°ìì‹ ì„ return
 	if (parent[n] == n) return n;
-	// ·çÆ®°¡ ¾Æ´Ï¸é ·çÆ®¸¦ Ã£À½
+	// ë£¨íŠ¸ê°€ ì•„ë‹ˆë©´ ë£¨íŠ¸ë¥¼ ì°¾ìŒ
 	parent[n] = find(parent[n]);
-	// ·çÆ®ÀÇ °ªÀ» return
+	// ë£¨íŠ¸ì˜ ê°’ì„ return
 	return parent[n];
 }
 
@@ -28,13 +27,13 @@ bool merge(int a, int b) {
 	a = find(a);
 	b = find(b);
 	
-	// ¿¬°áÀÌ µÇ¾îÀÖÀ¸¸é false ¾Æ´Ï¸é µÑÀ» °áÇÕ(¿¬°á). b°¡ ·çÆ®°¡ µÊ.
+	// ì—°ê²°ì´ ë˜ì–´ìˆìœ¼ë©´ false ì•„ë‹ˆë©´ ë‘˜ì„ ê²°í•©(ì—°ê²°). bê°€ ë£¨íŠ¸ê°€ ë¨.
 	if (a == b) return false;
 	parent[b] = a;	
 	return true;
 }
 
-// weight¸¦ ±âÁØÀ¸·Î ¿À¸§Â÷¼ø sortingÇÏ±â À§ÇÑ ÇÔ¼ö
+// weightë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¦„ì°¨ìˆœ sortingí•˜ê¸° ìœ„í•œ í•¨ìˆ˜
 bool compare(const Tree &t1,const Tree &t2) {
 	if (t1.weight < t2.weight)
 		return true;
@@ -49,11 +48,11 @@ int main() {
 	for (int i = 1; i <= M; i++) 
 		scanf("%d %d %d", &t[i].a, &t[i].b, &t[i].weight);
 
-	// ½ÃÀÛÀº ¸ğµÎ ÀÚ±âÀÚ½ÅÀÌ ·çÆ®.
+	// ì‹œì‘ì€ ëª¨ë‘ ìê¸°ìì‹ ì´ ë£¨íŠ¸.
 	for (int i = 1; i <= N; i++)
 		parent[i] = i;
 
-	// weight¸¦ ±âÁØÀ¸·Î struct¸¦ sort.
+	// weightë¥¼ ê¸°ì¤€ìœ¼ë¡œ structë¥¼ sort.
 	stable_sort(t + 1, t + M + 1, compare);
 
 	for (int i = 1; i <= M; i++) 
@@ -64,4 +63,3 @@ int main() {
 
 	return 0;
 }
-#endif
