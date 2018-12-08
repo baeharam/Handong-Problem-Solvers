@@ -4,7 +4,7 @@ bool visit[101];
 int num, q1, q2, m;
 int answer=0;
 
-void family(int parent, int a)
+void DFS(int parent, int a)
 {
 	visit[parent] = true;
 	if (parent == q2)
@@ -28,7 +28,7 @@ int main(void)
 		scanf("%d %d", &e1, &e2);
 		arr[e1][e2] = arr[e2][e1] = true;
 	}
-	family(q1, answer);
+	DFS(q1, answer);
 
 	if (answer)
 		printf("%d", answer);
