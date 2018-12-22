@@ -20,39 +20,32 @@ int dist[MAX_SIZE];
 int n, m, s, d, u, v, p;
 
 void delete_edge(int dest) {
-
 	if (dest == s) return;
-
-		for (int i = 0; i < reverse_edge[dest].size(); i++) {
-			for (int j = 0; j < vt[reverse_edge[dest][i]].size(); j++) {
-				if (vt[reverse_edge[dest][i]][j].second == dest) {
-
-					vt[reverse_edge[dest][i]][j].first = INF;
-					delete_edge(reverse_edge[dest][i]);
+		
+	for (int i = 0; i < reverse_edge[dest].size(); i++) {
+		for (int j = 0; j < vt[reverse_edge[dest][i]].size(); j++) {
+			if (vt[reverse_edge[dest][i]][j].second == dest) {
+				vt[reverse_edge[dest][i]][j].first = INF;
+				delete_edge(reverse_edge[dest][i]);
 				}
 			}
 		}
 }
 
 void dikstra(int start) {
-
 	dist[start] = 0;
 	pq.push(P(dist[start], start));
 
 	while (!pq.empty()) {
-
 		int now = pq.top().second;
 		pq.pop();
 
 		for (int i = 0; i < vt[now].size(); i++) {
-
 			int next_c = vt[now][i].first;
 			int next_v = vt[now][i].second;
 
 			if (dist[next_v] >= dist[now] + next_c) {
-
 				if (dist[next_v] > dist[now] + next_c) {
-
 					reverse_edge[next_v].clear();
 				}
 
@@ -65,16 +58,10 @@ void dikstra(int start) {
 }
 
 int main(void) {
-
-	ios::sync_with_stdio(false);
-	cin.tie(0);
-
 	while (1) {
 
 		cin >> n >> m;
-
 		if (n == 0 && m == 0) break;
-
 		cin >> s >> d;
 
 		for (int i = 0; i < n; i++) {
@@ -84,7 +71,6 @@ int main(void) {
 		}
 
 		for (int i = 0; i < m; i++) {
-
 			cin >> u >> v >> p;
 			vt[u].push_back(P(p, v));
 		}
@@ -96,23 +82,21 @@ int main(void) {
 		}
 
 		else {
-
 			delete_edge(d);
-
-				for (int i = 0; i < n; i++) {
+			
+			for (int i = 0; i < n; i++) {
 					dist[i] = INF;
 				}
+			dikstra(s);
+			if (dist[d] == INF) {
+				cout << -1 << '\n';
+			}
 
-				dikstra(s);
-
-				if (dist[d] == INF) {
-					cout << -1 << '\n';
-				}
-
-				else {
-					cout << dist[d] << '\n';
-				}
+			else {
+				cout << dist[d] << '\n';
+			}
 		}
 	}
+	
 	return 0;
 }
