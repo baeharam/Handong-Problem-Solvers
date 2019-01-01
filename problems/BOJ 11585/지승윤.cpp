@@ -8,8 +8,7 @@ int main() {
 	for (int i = 1, j = 0; s[i]; i++) {
 		while (j && s[i] != s[j]) 
 			j = p[j - 1];
-		if (s[i] == s[j])
-			p[i] = ++j;
+		p[i] = ++j;
 	}
 	cout<<"1/"<<(n%(n-p[n - 1])?n:(n-p[n - 1]));
 }
