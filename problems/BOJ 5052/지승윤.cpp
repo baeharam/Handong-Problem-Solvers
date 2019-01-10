@@ -1,42 +1,36 @@
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+char num[12];
+int trie[1000000][10];
+int last;
 
-int n;
+int insert(int cnt,int where){
+  int i,w;
+  if (where>last){  
+    last++;
+    for (i=0;i<=9;i++)
+      trie[last][i]=-1;
+  }
+  w=trie[where][num[cnt]-48];
+  if (w==-2) return 0;
+  if (w==-1){
+    trie[where][num[cnt]-48]=num[cnt+1]?last+1:-2;
+    w=last+1;
+  }
+  return num[cnt+1]? insert(cnt+1,w): w==last+1;  
+}
 
-int main() {
-	int trie[10005 * 10][10];
-	bool fin[10005 * 10];
-	char str[12];
-	short N, T; for (scanf("%hd", &T); T--;) {
-		scanf("%hd\n", &N);
-		n = 0;
-		memset(trie[0], 0, sizeof(trie[0]));
-		bool ans = 1;
-		for (register short i = 1; i <= N; i++) {
-			fgets(str, 12, stdin);
-			if (!ans) continue;
-			register int p = 0;
-			for (register short j = 0; ans && str[j] != '\n'; j++) {
-				register short cur = str[j] - '0';
-				if (!trie[p][cur]) {
-					++n;
-					fin[n] = 0;
-					memset(trie[n], 0, sizeof(trie[n]));
-					trie[p][cur] = n;
-				}
-				p = trie[p][cur];
-				if (fin[p]) ans = 0;
-			}
-			if (ans) {
-				fin[p] = 1;
-				for (register short j = 0; j < 10; j++) {
-					if (trie[p][j] > 0) {
-						ans = 0;
-						break;
-					}
-				}
-			}
-		}
-		puts(ans ? "YES" : "NO");
-	}
+int main(void){
+  int t,n;
+  scanf("%d",&t);
+  while (t--){
+    int i,pre=0;
+    last=-1;
+    scanf("%d",&n);
+    for (i=0;i<n;i++){
+      scanf("%s",num);
+      if (!pre) pre|=!insert(0,0);
+    }
+    printf("%s\n",pre?"NO":"YES");
+  }  
+  return 0;
 }
