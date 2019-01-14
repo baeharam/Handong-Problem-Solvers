@@ -10,10 +10,10 @@
 
 # 문제 채점 상태 보기
 
-* [유예찬](https://www.acmicpc.net/status?user_id=fbdp1202)   [지승윤](https://www.acmicpc.net/status?user_id=csy1874)   [송진범](https://www.acmicpc.net/status?user_id=sieg1031)
+* [유예찬](https://www.acmicpc.net/status?user_id=fbdp1202)   [지승윤](https://www.acmicpc.net/status?user_id=csy1874)   
 * [김용주](https://www.acmicpc.net/status?user_id=jhvl4130)   [배하람](https://www.acmicpc.net/status?user_id=gkfkagkfka12)   
 * [박하윤](https://www.acmicpc.net/status?user_id=gkahsdl)    [강동인](https://www.acmicpc.net/status?user_id=dongin) 
-
+* [송진범](https://www.acmicpc.net/status?user_id=sieg1031)
 
 # :x:경고 대상:x:
 김용주(1), 지승윤, 강동인
