@@ -16,4 +16,4 @@
 * [송진범](https://www.acmicpc.net/status?user_id=sieg1031)
 
 # :x:경고 대상:x:
-김용주(1), 지승윤, 강동인
+김용주(2), 지승윤(1), 강동인(1)
