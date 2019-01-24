@@ -16,4 +16,4 @@
 * [송진범](https://www.acmicpc.net/status?user_id=sieg1031)
 
 # :x:경고 대상:x:
-배하람(2), 송진범(2), 
+배하람(2), 송진범(2)
